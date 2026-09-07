@@ -41,7 +41,11 @@ This module will allow you to control your Symetrix DSP using TCP commands and r
 - last_preset _(Last recalled preset from the TCP connection. Recalls from Symview will not be displayed)_
 
 **Control values**
-- control_value_### _(Returns the current value of a control number when it updates. **Push must be enabled in Composer for the specific control number**)_
+- `control_number_###` _(Current raw control value, 0–65535)_
+- `control_number_###_perc` _(Current control value as a percentage)_
+- `control_number_###_db` _(Current control value formatted as dB, assuming the default fader scale of -72 to +12 dB)_
+
+**Push must be enabled in Composer for the specific control number.** Replace `###` with the control number, for example `control_number_7`. Variables are created on the first received value and reused for subsequent updates.
 
 
 _Note:_ As you can see, the values of control numbers dynamically stored in a variable (replace ### with the control number). 

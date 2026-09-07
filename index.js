@@ -281,7 +281,7 @@ class SymetrixDSPInstance extends InstanceBase {
 
     // Check if variables already has been declared for specific control number
     let foundControlNumberVariable = self.variables.some(function (variable) {
-      return variable.name === `control_number_${control_number}`;
+      return variable.variableId === `control_number_${control_number}`;
     });
 
     // If control number has no variable yet, create one

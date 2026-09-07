@@ -2,7 +2,9 @@
 	"name": "symetrix-dsp",
 	"version": "2.0.1",
 	"main": "index.js",
-	"scripts": {},
+	"scripts": {
+		"test": "node --test test/*.test.cjs"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/bitfocus/companion-module-symetrix-dsp.git"
