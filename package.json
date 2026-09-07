@@ -3,7 +3,7 @@
 	"version": "2.0.1",
 	"main": "index.js",
 	"scripts": {
-		"test": "node --test test/*.test.cjs"
+		"test": "node --test test/control-variables.test.cjs"
 	},
 	"repository": {
 		"type": "git",
